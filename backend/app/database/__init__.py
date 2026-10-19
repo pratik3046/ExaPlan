@@ -1,0 +1,38 @@
+from app.database.session import Base, engine, SessionLocal, get_db
+from app.database.models import (
+    User,
+    UserRole,
+    Student,
+    Faculty,
+    FacultyLeave,
+    FacultyRank,
+    Room,
+    RoomBench,
+    ExamSession,
+    ExamType,
+    SeatPosition,
+    SeatingAllocation,
+    InvigilationAllocation,
+    AuditLog,
+)
+
+__all__ = [
+    "Base",
+    "engine",
+    "SessionLocal",
+    "get_db",
+    "User",
+    "UserRole",
+    "Student",
+    "Faculty",
+    "FacultyLeave",
+    "FacultyRank",
+    "Room",
+    "RoomBench",
+    "ExamSession",
+    "ExamType",
+    "SeatPosition",
+    "SeatingAllocation",
+    "InvigilationAllocation",
+    "AuditLog",
+]
